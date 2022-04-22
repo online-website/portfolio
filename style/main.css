@@ -482,9 +482,10 @@ header .toggle:hover + nav ul {
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
+  cursor: pointer;
 }
 
-.projects .projects-container .box img:hover {
+.projects .projects-container .box img:hover{
   transform: translateY(-10px);
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
@@ -589,15 +590,8 @@ header .toggle:hover + nav ul {
 }
 
 @media (max-width: 500px) {
-
-  .projects .projects-container .box img:hover {
-    transform: scale(1.4) ;
-    -webkit-transform: scale(1.4) ;
-    -moz-transform: scale(1.4) ;
-    -ms-transform: scale(1.4) ;
-    -o-transform: scale(1.4) ;
-}
-  .projects .projects-container .box img 
+  .projects .projects-container .box a.link-img, 
+  .projects .projects-container .box a.link-img:visited 
   {
   display: block;
   max-width: 100%;
