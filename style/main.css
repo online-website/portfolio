@@ -129,7 +129,7 @@ ul {
 
 @media (max-width: 767px) {
   .links {
-    left: -2%;
+    display: none;
   }
   .line {
     width: 80px;
@@ -634,7 +634,7 @@ header .toggle:hover + nav ul {
 
 
 .contact .img  img{
-  max-width: 90%;
+  max-width: 85%;
 }
 
 .contact .text {
@@ -663,6 +663,12 @@ header .toggle:hover + nav ul {
   text-align: center;
 }
 
+.contact .text p:last-of-type, 
+.contact .text .social {
+  display: none;
+} 
+
+
 @media (max-width: 991px) {
 
   .contact .text {
@@ -683,6 +689,30 @@ header .toggle:hover + nav ul {
   .contact .img {
   width: 400px;
 }
+
+
+.contact .text p:last-of-type, 
+.contact .text .social {
+  display: block;
+}
+.social  ul {
+  display: flex;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.social  ul li a i {
+  font-size: 3rem;
+  color: #555;
+  
+}
+.social  ul li a:hover{
+  color: var(--main-color);
+}
+
 }
 
 footer {
