@@ -129,7 +129,7 @@ ul {
 
 @media (max-width: 767px) {
   .links {
-    left: 0%;
+    left: -2%;
   }
   .line {
     width: 80px;
