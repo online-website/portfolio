@@ -349,13 +349,27 @@ header .toggle:hover + nav ul {
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 12rem;
+  align-items: center;
 }
 
 .about .about-container .text {
   font-size: 20px;
   line-height: 1.6;
   color: #fff;
+  margin-left: 3rem;
 }
+
+
+@media (max-width: 767px) {
+  .about .about-container .text {
+    margin-left: 0;
+  }
+
+  .about img {
+    margin-bottom: 2rem;
+  }
+}
+
 .about .about-container .text .comp {
   color: #006058;
   text-decoration: none;
@@ -732,9 +746,8 @@ footer {
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
+  color: #222;
 }
-
-
 
 @media (max-width: 767px) {
   .projects .img a {
